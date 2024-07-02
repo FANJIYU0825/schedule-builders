@@ -1,0 +1,19 @@
+
+.card {
+    margin-bottom: 1rem;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--borderRadius);
+    padding: 4px;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.absoluteTopRight {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}

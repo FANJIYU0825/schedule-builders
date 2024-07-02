@@ -1,0 +1,18 @@
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  position: relative;
+  width: 100vw;
+}
+
+.mobile {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+}

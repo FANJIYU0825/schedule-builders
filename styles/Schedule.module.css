@@ -1,0 +1,75 @@
+.scheduleContainer {
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    position: relative;
+}
+
+.scheduleArea {
+    height: 100%;
+    width: 100%;
+}
+
+.scheduleArea125 {
+    border: 1px solid var(--uuGreyDark);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: var(--uuGreyLight);
+}
+.scheduleArea100 {
+    border-top: 2px solid var(--uuRed);
+    height: 80%;
+    width: 100%;
+    position: relative;
+    top: 20%;
+}
+.studyPaceMarker {
+    margin: 0;
+    transform:translate(-115%, -50%);
+    padding-right: 0.2rem;
+    position: absolute;
+}
+
+.yAxisName {
+    white-space: nowrap;
+    position: absolute;
+    top: 45%;
+    transform: translateX(-90%) translateY(-50%) rotate(-90deg);
+}
+
+.xAxisValue {
+    border-left: 1px solid var(--uuGreyDark);
+    margin: 0;
+    padding-left: 0.5rem;
+    flex: 1
+}
+.autumnLast {
+    border-left: 1px solid var(--uuGreyDark);
+    margin: 0;
+    padding-left: 0.5rem;
+    flex: 0.25;
+}
+.springFirst {
+    margin: 0;
+    flex: 0.5;
+}
+.SpringLast {
+    border-left: 1px solid var(--uuGreyDark);
+    margin: 0;
+    padding-left: 0.5rem;
+    flex: 0.25;
+}
+.centerText {
+    text-align: center;
+}
+
+.scheduleHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+

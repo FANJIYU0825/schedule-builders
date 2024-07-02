@@ -1,0 +1,43 @@
+
+default:
+  tags:
+      - build
+
+stages:          # List of stages for jobs, and their order of execution
+  - build
+  - test
+  - deploy
+
+build-job:       # This job runs in the build stage, which runs first.
+  stage: build
+  only:
+      - main
+  script:
+    - whoami
+    - echo "Pulling latest remote source..."
+    - cd /home/scheduleblocks-admin/scheduleblocks/schedulebuilder/
+    - git config --global --add safe.directory /home/scheduleblocks-admin/scheduleblocks/schedulebuilder
+    - git checkout .
+    - git pull ${CI_REPOSITORY_URL}
+    - echo "Compiling a production build..."
+    - npm ci
+    - npm run build
+    
+test-job:
+  stage: test
+  script:
+    - echo "Running tests..."
+    - cd /home/scheduleblocks-admin/scheduleblocks/schedulebuilder/
+    - npm ci
+    - npm run test
+    #- npm exec snyk auth "$SNYK_TOKEN"
+    #- npm exec snyk test --fail-on=patchable
+
+deploy-job:      # This job runs in the deploy stage.
+  stage: deploy
+  only:
+      - main
+  script:
+    - echo "Deploying application..."
+    - cd /
+    - sudo -u scheduleblocks-admin npx pm2 restart schedulebuilder

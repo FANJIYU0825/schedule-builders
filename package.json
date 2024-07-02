@@ -1,0 +1,48 @@
+{
+  "name": "schedulebuilder",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "npx standard --fix",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@auth0/nextjs-auth0": "^3.1.0",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@formbricks/js": "^0.1.17",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.10.1",
+    "@react-pdf/renderer": "^3.1.4",
+    "csvjson-csv2json": "^5.0.6",
+    "framer-motion": "^7.4.0",
+    "html-entities": "^2.4.0",
+    "html-to-image": "^1.11.11",
+    "next": "^13.4.19",
+    "posthog-js": "^1.79.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^8.0.6"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^9.0.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "eslint": "8.19.0",
+    "eslint-config-next": "^13.4.19",
+    "jest": "^29.4.2",
+    "jest-environment-jsdom": "^29.4.2",
+    "snyk": "^1.1179.0",
+    "standard": "^17.0.0"
+  },
+  "standard": {
+    "ignore": [
+      "/__tests__"
+    ]
+  }
+}

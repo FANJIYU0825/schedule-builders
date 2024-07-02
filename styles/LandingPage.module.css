@@ -1,0 +1,126 @@
+
+.sigill {
+    position: relative;
+    z-index: 1200;
+}
+
+.sigill > img {
+    opacity: .085;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+}
+
+.navlogo {
+    height: 100px; 
+    width: 100px;
+    margin-right: 25px;
+}
+
+.mainArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.textArea {
+    flex-direction: column;
+    z-index: 2000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:10px;
+    margin-right: 15px;
+}
+
+
+.textAreaSubtitleLanding {
+    font-family: 'Berling';
+    font-size: 19px;
+    letter-spacing: .25px;
+    font-weight: 100;
+    opacity: 0.8;
+    text-align: center;
+    max-width: 600px;
+    height:100px;
+    z-index: 2000;
+}
+
+.textAreaSubtitleSaved {
+    font-family: 'Berling';
+    font-size: 19px;
+    letter-spacing: .25px;
+    font-weight: 100;
+    opacity: 0.8;
+    text-align: center;
+    max-width: 600px;
+    height: 50px;
+    z-index: 2000;
+    margin-bottom: 50px;
+    margin-top:10px;
+}
+
+
+.pictureArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.pictureArea > img {
+    position: fixed;
+    max-width: 645px;
+}
+
+@media only screen and (max-width: 1536px){
+    
+    .textAreaSubtitleSaved {
+        font-size: 15px;
+        height: 40px;
+    }
+
+    .sigill {
+        width: 10px
+    }
+
+}
+
+@media only screen and (max-width: 1350px){
+    
+    .pictureArea {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1950px){
+    
+    .pictureArea > img {
+        max-width: 1000px;
+    }
+
+    .textAreaSubtitleLanding {
+        max-width: 1000px;
+        font-size: 24px;
+    }
+
+}
+
+@media only screen and (min-width: 2500px){
+    
+    .pictureArea > img {
+        max-width: 1400px;
+    }
+
+    .textAreaSubtitleLanding {
+        max-width: 1200px;
+        font-size: 28px;
+    }
+
+}

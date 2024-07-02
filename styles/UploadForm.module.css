@@ -1,0 +1,77 @@
+.fileUploadContainer {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+    max-height: calc(100vh - 260px);
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    text-align: center;
+  }
+  
+  .fileUpload {
+    display: flex;
+    height: 100%;
+    aspect-ratio: 1;
+    background-color: transparent;
+    border: 2px dashed gray;
+    border-radius: 30%;
+    font-size: 12px;
+    justify-content: center;
+    background-color: #FFF;
+  }
+  
+  .fileUpload:hover {
+    background-color: var(--uuGreyDark);
+  }
+  
+  .fileUploadContent {
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    aspect-ratio: 1;
+  }
+  
+  .fileUploadInput {
+    flex: 1;
+    z-index: 2;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+  }
+  
+  .fileUploadInput:focus {
+    outline: none;
+  }
+
+  .uploadPage {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+  }
+
+.sigill {
+    position: relative;
+}
+
+.sigill > img {
+    opacity: .085;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    height: 500px;
+}

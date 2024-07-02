@@ -1,0 +1,11 @@
+.inCalendarCard {
+    bottom: 0;
+    position: absolute;
+    background-color: var(--uuGreyLight);
+}
+
+.inner {
+    height: 100%;
+    width: 100%;
+    background-color: var(--uuGreyDark);
+}
